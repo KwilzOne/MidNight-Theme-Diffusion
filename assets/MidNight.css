@@ -5,10 +5,10 @@
 	https://whitewolf.su
 */
 
-@import url(https://api.whitewolf.su/?css=SD-Core.css);
+@import url(https://raw.githubusercontent.com/KwilzOne/MidNight-Theme-Diffusion/whitewolf/assets/SD-Core.css);
 
 :root, .dark {
-	--neutral-50: #fbfbfb !important;
+    --neutral-50: #fbfbfb !important;
     --neutral-100: #e5e5e5 !important;
     --neutral-200: #a3a3a3 !important;
     --neutral-300: #dddddd !important;
@@ -30,7 +30,7 @@
     --primary-800: #90129a !important;
     --primary-900: #7c127a !important;
     --primary-950: #59126c !important;
-	--secondary-50: #fbefff !important;
+    --secondary-50: #fbefff !important;
     --secondary-100: #fcdbfe !important;
     --secondary-200: #febffc !important;
     --secondary-300: #fd93f0 !important;
@@ -42,5 +42,5 @@
     --secondary-900: #831e8a !important;
     --secondary-950: #401d60 !important;
     --slider-color: #8a00ff !important;
-	--shadow-color: #7e00ff59 !important;
+    --shadow-color: #7e00ff59 !important;
 }
