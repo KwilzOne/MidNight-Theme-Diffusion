@@ -1,0 +1,151 @@
+/*
+	MidNighth Theme Diffusion
+	- Basic Core
+	- Author: Kwilz
+	https://whitewolf.su
+*/
+/*
+	100% supported addons:
+	* built-in,
+	- canvas-zoom,
+	- sd-discord-rich_presence,
+	- stable-diffusion-webui-state
+*/
+
+.extra-network-cards .card:hover {
+    box-shadow: 0 0 2px 0.3em var(--shadow-color) !important;
+}
+
+.extra-network-cards .card .actions * {
+    color: var(--neutral-100) !important;
+}
+
+.popup-metadata {
+    color: var(--neutral-100) !important;
+    background: var(--neutral-800) !important;
+    font-size: 14px !important;
+	border-radius: 12px !important;
+}
+
+.dark .progressDiv {
+    background: var(--neutral-700) !important;
+}
+
+.progressDiv .progress {
+	background: var(--slider-color) !important;
+}
+
+#context-menu {
+    border: 2px solid var(--slider-color) !important;
+    box-shadow: 1px 1px 2px var(--neutral-600) !important;
+    background: var(--neutral-950) !important;
+}
+
+.context-menu-items > a {
+	color: var(--neutral-50) !important;
+}
+
+.context-menu-items > a:hover {
+	background: var(--neutral-800) !important;
+	border-radius: 8px;
+}
+
+.gradio-button.generate-box-skip, .gradio-button.generate-box-interrupt {
+    background: var(--button-secondary-background-fill) !important;
+}
+.gradio-button.generate-box-skip:hover, .gradio-button.generate-box-interrupt:hover {
+    background: var(--button-secondary-background-fill-hover) !important;
+}
+
+#txt2img_neg_prompt textarea,
+#img2img_neg_prompt textarea {
+	font-size: 12px;
+	color: var(--neutral-400);
+}
+
+input[type=range] {
+	accent-color: var(--slider-color);
+}
+
+input[type=checkbox] {
+	position: relative;
+	cursor: pointer;
+}
+
+input[type=checkbox]:before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	top: 0;
+	left: 0;
+	border: 2px solid var(--slider-color);
+	border-radius: 3px;
+	background-color: var(--color-black);
+}
+
+input[type=checkbox]:checked:after {
+	content: "";
+	display: block;
+	width: 5px;
+	height: 10px;
+	border: solid var(--body-text-color);
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	position: absolute;
+	top: 2px;
+	left: 6px;
+}
+
+body {
+	background-color: var(--neutral-950) !important;
+}
+
+body:after {
+	content: "𝙼𝚒𝚍𝙽𝚒𝚐𝚑𝚝";
+	font-size: 14px;
+    color: var(--slider-color);
+    top: 10px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 0);
+    pointer-events: none;
+}
+
+.versions #sd_checkpoint_hash:after {
+    content: "•";
+    color: var(--body-text-color);
+    padding: 0 6px 0 8px;
+}
+
+.versions:after {
+    content: "theme: r1.0.1";
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: var(--slider-color);
+}
+
+::-webkit-scrollbar-track {
+    background: var(--neutral-950);
+}
+
+::selection {
+	color: #fff;
+	text-shadow: none;
+	background: #8e3b99a6;
+}
+
+/* Fixes */
+#lightboxModal {
+	z-index: 99999;
+}
